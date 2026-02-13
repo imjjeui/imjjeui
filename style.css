@@ -1,0 +1,67 @@
+p {
+    font-size:20px;
+    color:brown;
+}
+
+p, ul, ol {
+    color:chocolate;
+}
+
+.standout
+{
+    color:blue
+}
+
+h2.standout, .bold_text
+p[align]
+{
+    color:crimson;
+}
+p[align="center"]
+{
+    color:blue;
+}
+.image1:hover{
+    border-radius: 50%;
+    opacity:0.6;
+    transform: rotate(45deg);
+}
+
+.image2{
+    filter:blur(2px);
+    transform:scale(0.5);
+}
+
+@keyframes move_image {
+    0% {transform:translate(30px,30px);}
+    25% {transform: translate(60px,60px);}
+    75%{transform:translate(90px,90px);}
+    100%{transform:translate(120px,120px);}
+}
+@keyframes rotation {
+    0% {transform:rotate(45deg);}
+    25% {transform:rotate(90deg);}
+    50% {transform:rotate(135deg);}
+    100% {transform:rotate(180deg);}
+}
+
+.image3_animation:hover{
+    animation-name: move_image;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.image4_animation:hover{
+    animation-name: rotation;
+    animation-duration: 4s;
+}
+.welcome{
+    background-color: aquamarine;(170,59,133);
+    padding:50px;
+    
+}
+.foot{
+    background-color: rgb(127, 150, 255);
+    padding:50px;
+    
+}
